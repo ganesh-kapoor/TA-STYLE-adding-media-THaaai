@@ -1,0 +1,336 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Variables */
+:root{
+    --primary: #1379E4;
+    --secondary: #77E56A;
+    --background-color: #EFEFEF;
+    --text-color: #3E3E3E;
+}
+/* My Resets */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+/* General Styles */
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+/* Container */
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 32px;
+    width: 100%;
+}
+/* Flex */
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.align-start{
+    align-items: flex-start ;
+}
+.flex-60{
+    flex: 0 1 60%;
+}
+.flex-40{
+    flex: 0 1 40%;
+}
+.flex-30{
+    flex: 0 1 30%;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-22{
+    flex: 0 1 22%;
+}
+/* Buttons */
+.btn{
+    font-size: 16px;
+    padding: 12px 24px;
+    color: #ffffff;
+    text-align: center;
+    display: inline-block;
+    border-radius: 28px;
+    box-shadow: none;
+    outline: 0;
+    border: 0;
+}
+.btn-primary{
+    background-color: #CF3733;
+    color: #ffffff;
+}
+.btn-secondary{
+    background-color: transparent;
+    border: 2px solid #ffffff;
+}
+.btn-tertiary{
+    background-color: #EFEFEF;
+    color: var(--text-color);
+    margin-top: 32px;
+}
+
+/* Navigation Bar*/
+.nav-bar{
+    padding: 16px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.brand{
+    font-size: 36px;
+    margin-right: 160px;
+    color: #ffffff;
+    font-weight: 700;
+}
+.nav-menu a{
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.nav-bar li{
+    margin-left: 32px;
+    text-transform: capitalize;
+}
+.social-media-item a{
+    font-size: 16px;
+}
+/* Hero Section  */
+.hero{
+    height: 100vh;
+    background-color: var(--secondary);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right,rgba(19,120,229, 0.7),
+    rgba(121,229,101, 0.7)), url(../assets/home-bg.jpg) center center no-repeat;
+    background-size: cover;
+}
+.col-1-2{
+    flex: 0 1 48%;
+}
+.hero-content{
+    padding-right: 80px;
+}
+.hero .container{
+    width: 100%; 
+}
+.hero-heading{
+    font-size: 44px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+.hero-contact{
+    margin-right: 136px;
+}
+/* Flexible -img */
+.flexible-img{
+    width: 100%;
+    height: auto;
+}
+.about{
+    padding: 80px 0; 
+}
+/* Dots */
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: #E9E9E9;
+    display: inline-block;
+}
+
+.about-heading, .blog-heading{
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 4px;
+}
+.about-text{
+    font-size: 16px;
+    color: #686464;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+.progress-item{
+    margin-bottom: 18px;
+}
+.progress-item h3{
+    color: #686464;
+    font-weight: 500;
+}
+.progress-item p{
+    color:#686464;
+}
+progress{
+    width: 100%;
+    height: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--background-color)
+}
+progress::-webkit-progress-bar{
+    background-color: var(--background-color);
+}
+progress::-webkit-progress-value{
+    background-color: var(--text-color);
+}   
+/* Blog Section */
+.blog{
+    padding: 80px 0;
+    background-color: #EFEFEF;
+}
+.text-center{
+    text-align: center;
+}
+.font-0{
+    font-size: 0;
+}
+.article{
+    background-color: #ffffff;
+    margin: 24px 0;
+}
+
+.article-content{
+    padding: 32px;
+}
+.article time{
+    color: #D13D39;
+    font-size: 14px;
+}
+.article time i {
+    margin-right: 8px;
+}
+.article h3{
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 12px 0;
+}
+.article p{
+    color: #a5a5a5;
+}
+/* Work Section */
+.work{
+    padding: 80px 0;
+}
+.work img{
+    border-radius: 4px;
+    margin-top: 24px;
+}
+/* Contact Section */
+.contact{
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    padding: 80px 0;
+}
+.contact .blog-heading{
+    color: #ffffff;
+}
+/* form */
+.form-control{
+    display: block;
+    width: 100%;
+    color: var(--text-color);
+    padding: 16px 12px;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 4px;
+    margin-top: 16px;
+}
+.contact .btn{
+    margin-top: 22px;
+}
+.map{
+    text-align: center;
+}
+.map iframe{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+/* Footer */
+.footer{
+    padding: 80px 0;
+    background: linear-gradient(to right, rgb(65,65,65), rgb(1,1,1));
+}
+.footer h3{
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+.footer p, 
+.footer h3, 
+.footer address, 
+.footer a{
+    color: #ffffff;
+}
+.footer hr{
+    margin-top: 40px;
+    border: 0;
+    border-top: 1px solid #706e6e;
+}
+.footer small{
+    color: #ffffff;
+    padding-top: 36px;
+}
+.footer-info {
+    padding-top: 36px;
+    padding-right: 150px;
+    color: #ffffff;
+}
+.footer-info p{
+    margin-right: 60px;;
+}
+.footer-info a{
+    margin-right: 32px;
+    
+}
