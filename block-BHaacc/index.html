@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hydro-Assignment Level 1 Adding Media</title>
-        <!-- CSS Link -->
-        <link rel="stylesheet" href="stylesheet/style.css">
-        <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/3fa4f8d4b8.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <!-- Header -->
-        <header class="header">
-            <div class="container flex">
-                <a class="brand" href="#">Hydro</a>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydro Assignment Level 1 Adding Media</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3fa4f8d4b8.js" crossorigin="anonymous"></script>
+    <!-- CSS Link-->
+    <link rel="stylesheet" href="stylesheet/style.css">
+</head>
+<body>
+    <!-- Header Start -->
+    <header class="nav-bar">
+        <div class="container flex">
+            <div class="flex">
+                <a class="brand" href="#">
+                    <strong>Hydro</strong>
+                </a>
                 <nav>
-                    <ul class="flex">
+                    <ul class="flex nav-menu nav-menu-primary">
                         <li>
                             <a href="#">home</a>
                         </li>
@@ -33,30 +36,336 @@
                             <a href="#">contacts</a>
                         </li>
                     </ul>
-                </nav>
-                <div class="icon-box">
-                    <a class="icon" href="#">
-                        <i class="fa-brands fa-square-facebook"></i>
-                    </a>
-                    <a class="icon" href="#">
-                        <i  class="fa-brands fa-twitter"></i>
-                    </a>
-                    <a class="icon" href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a class="btn-primary" href="#">sign in / join</a>
+                </nav> 
+            </div>
+            <nav>
+                <ul class="flex nav-menu nav-menu-secondary">
+                    <li class="social-media-item">
+                        <a href="#">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="social-media-item">
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="social-media-item">
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn btn-primary" href="#">sign in / join</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- main start -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container flex">
+                <div class="col-1-2 hero-content">
+                    <h1 class="hero-heading">We make beautiful websites for all people.</h1>
+                    <div class="flex">
+                        <a class="btn btn-secondary" href="#">Start a project</a>
+                        <p class="hero-contact">CALL US(+66)010-020-0340<br/>For any inquiry</p>
+                    </div>
+                </div>
+                <figure class="col-1-2">
+                    <iframe width="100%" height="320" src="https://www.youtube.com/embed/AqcjdkPMPJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </figure>
+            </div>
+        </section>
+        <!-- Hero Section End -->
+        <!-- About Section -->
+        <section class="about">
+            <div class="container flex align-start">
+                <div class="flex-40"> 
+                    <h2 class="about-heading">Let us introduce</h2>
+                    <div class="dot-box">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <p class="about-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorum reprehenderit voluptate placeat itaque velit eos suscipit voluptas deleniti.
+                    </p>
+                    <p class="about-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorum reprehenderit volupt.
+                    </p>
+                </div>
+                <div class="flex-30 progress">
+                    <div class="progress-item">
+                        <div class="flex">
+                            <h3>Web Design</h3>
+                            <p>85%</p>
+                        </div>
+                        <progress value="85" max="100"></progress>
+                    </div>
+                    <div class="progress-item">
+                        <div class="flex">
+                            <h3>Photography</h3>
+                            <p>90%</p>
+                        </div>
+                        <progress value="90" max="100"></progress>
+                    </div>
+                    <div class="progress-item">
+                        <div class="flex">
+                            <h3>Content Marketing</h3>
+                            <p>75%</p>
+                        </div>
+                        <progress value="75" max="100"></progress>
+                    </div>
+                    <div class="progress-item">
+                        <div class="flex">
+                            <h3>CMS Admin</h3>
+                            <p>70%</p>
+                        </div>
+                        <progress value="70" max="100"></progress>
+                    </div>
+                </div>
+                <div class="flex-30">
+                    <img class="flexible-img" src="assets/about-image.jpg" alt="About Image">
                 </div>
             </div>
-        </header>
-        <!-- main start -->
-        <main>
-            <section class="hero">
-                <div class="container">
-                    <h1>We make beautiful<br/> websites for all people</h1>
-                    <a class="btn"  href="#">start a project</a>
-                    <p>CALL US(+66)010-020-0340<br/> for any inquiry<p>
+        </section>
+        <!-- About Section End -->
+        <!-- Blog Section -->
+        <section class="blog">
+            <div class="container">
+                <header class="text-center">
+                    <h3 class="blog-heading">Our Blog</h3>
+                    <div class="dot-box">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </header>
+                <div class="flex flex-wrap">
+                    <article class="flex article col-1-2">
+                        <div class="flex-40 font-0">
+                            <img class="flexible-img" src="assets/blog-image1.jpg" alt="Blog image 1">
+                        </div>
+                        <div class="flex-60 article-content">
+                            <time datetime="#">
+                                <i class="far fa-clock"></i>
+                                December 22, 2017
+                            </time>
+                            <h3>How To Find Out Beautiful Workspace.</h3>
+                            <p>
+                                Lorem ipsum dolor sit consectetur adipisicing morbi venenatis.
+                            </p>
+                            <a class="btn btn-tertiary" href="#">Read article</a>
+                        </div>
+                    </article>
+                    <article class="flex article col-1-2">
+                        <div class="flex-40 font-0">
+                            <img class="flexible-img" src="assets/blog-image2.jpg" alt="Blog image 1">
+                        </div>
+                        <div class="flex-60 article-content">
+                            <time datetime="#">
+                                <i class="far fa-clock"></i>
+                                December 18, 2017
+                            </time>
+                            <h3>How To Find Out Beautiful Workspace.</h3>
+                            <p>
+                                Lorem ipsum dolor sit consectetur adipisicing morbi venenatis.
+                            </p>
+                            <a class="btn btn-tertiary" href="#">Read article</a>
+                        </div>
+                    </article>
+                    <article class="flex article col-1-2">
+                        <div class="flex-40 font-0">
+                            <img class="flexible-img" src="assets/blog-image3.jpg" alt="Blog image 1">
+                        </div>
+                        <div class="flex-60 article-content">
+                            <time datetime="#">
+                                <i class="far fa-clock"></i>
+                                December 14, 2017
+                            </time>
+                            <h3>How To Find Out Beautiful Workspace.</h3>
+                            <p>
+                                Lorem ipsum dolor sit consectetur adipisicing morbi venenatis.
+                            </p>
+                            <a class="btn btn-tertiary" href="#">Read article</a>
+                        </div>
+                    </article>
+                    <article class="flex article col-1-2">
+                        <div class="flex-40 font-0">
+                            <img class="flexible-img" src="assets/blog-image4.jpg" alt="Blog image 1">
+                        </div>
+                        <div class="flex-60 article-content">
+                            <time datetime="#">
+                                <i class="far fa-clock"></i>
+                                December 10, 2017
+                            </time>
+                            <h3>How To Find Out Beautiful Workspace.</h3>
+                            <p>
+                                Lorem ipsum dolor sit consectetur adipisicing morbi venenatis.
+                            </p>
+                            <a class="btn btn-tertiary" href="#">Read article</a>
+                        </div>
+                    </article>
                 </div>
-            </section>
-        </main>
-    </body>
+            </div>
+        </section>
+        <!-- Blog Section End -->
+        <!-- Work Section Start-->
+        <section class="work ">
+            <div class="container">
+                <header class="text-center">
+                    <h3 class="blog-heading">Our work</h3>
+                    <div class="dot-box">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </header> 
+                <div class="flex">
+                    <div class="flex-22">
+                        <img class="flexible-img" src="assets/work-image1.jpg" alt="work-image1">
+                    </div>
+                    <div class="flex-22">
+                        <img class="flexible-img" src="assets/work-image2.jpg" alt="work-image1">
+                    </div>
+                    <div class="flex-22">
+                        <img class="flexible-img" src="assets/work-image3.jpg" alt="work-image1">
+                    </div>
+                    <div class="flex-22">
+                        <img class="flexible-img" src="assets/work-image4.jpg" alt="work-image1">
+                    </div>
+                </div> 
+            </div>  
+        </section>
+        <!-- Work Section End -->
+        <!-- Contact Section Start -->
+        <section class="contact">
+            <div class="container">
+                <header class="text-center">
+                    <h3 class="blog-heading">Contact us</h3>
+                    <div class="dot-box">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </header>  
+                <div class="flex">
+                    <form class="flex-60" action="index.html" method="post">
+                        <fieldset>
+                            <div class="flex">
+                                <input class="form-control col-1-2" type="text" name="name" placeholder="Full Name">
+                                <input class="form-control col-1-2" type="email" name="email" placeholder="Email">
+
+                            </div>
+                            <div class="flex">
+                                <input class="form-control col-1-2" type="tel"  name="number" placeholder="Your Phone">
+                                <select class="form-control col-1-2" name="budget" id="#">
+                                    <option value="Budget level">Budget Level</option>
+                                    <option value="Budget level 1">Budget Level 1</option>
+                                    <option value="Budget Level 2">Budget Level 2</option>
+                                    <option value="Budget Level 3">Budget Level 3</option>
+                                    <option value="Budget Level 4">Budget Level 4</option>
+                                    <option value="Budget Level 5">Budget Level 5</option>
+                                    <option value="Budget Level 5">Budget Level 6</option>
+                                </select>
+                            </div>
+                            <textarea class="form-control" name="requirements" placeholder=" Your requirements" rows="6"></textarea>
+                        </fieldset>
+                        <input class="btn btn-primary" type="submit" value="Send Message" >
+                    </form>
+                    <div class="flex-40 map">
+                        <iframe 
+                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.8861239922026!2d76.35321485012021!3d32.2072990200309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1664351988823!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>  
+            </div>
+        </section>
+        <!-- Contact Section End -->
+    </main>
+    <!-- Main end -->
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="flex align-start">
+                <div class="flex-40">
+                    <h3>Hydro Company</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Amet quaerat dolor pariatur velit eaque corporis Placeat animi ea dolor fugiat quae lorem ipsum dolor sit.</p>
+                </div>
+                <div class="flex-20">
+                    <h3>Company</h3>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Join our team</a>
+                            </li>
+                            <li>
+                                <a href="#">Read Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Press</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="flex-20">
+                    <h3>Services</h3>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#">Documentation</a>
+                            </li>
+                            <li>
+                                <a href="#">Support</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="flex-20">
+                    <h3>Find us</h3>
+                    <address>
+                        123 Grand Rama IX, <br/>
+                        Krung Thep Maha Nakhan 10400
+                    </address>
+                </div>
+            </div>
+            <hr/>
+            <div class="flex"> 
+                <small>Copyright &copy; 2017 Your Company</small>
+                <div class="flex footer-info">
+                    <p>Call us (+66)010-020-0340</p>
+                    <nav>
+                        <ul class="flex">
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-square-facebook"></i>   
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>   
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
